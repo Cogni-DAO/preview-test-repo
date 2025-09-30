@@ -31,7 +31,11 @@ gates:
 
   - type: ai-rule
     with:
-      rule_file: ai-rule-template.yaml
+      rule_file: strict-pr-mapping.yaml
+
+  - type: ai-rule
+    with:
+      rule_file: multi-goal-test.yaml
 
 # Ensure */*/AGENTS.md files are updated when code changes
   - type: agents-md-sync
